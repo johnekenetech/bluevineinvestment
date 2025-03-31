@@ -181,7 +181,7 @@ export default function Home() {
         <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
           <div className="w-full max-w-md mx-auto px-4">
             <div className="w-full p-8 bg-white rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold text-blue-600 mb-8 text-center">Welcome to Bluevine</h2>
+              <h2 className="text-2xl font-bold text-blue-600 mb-8 text-center">Welcome to Bluevine Investments</h2>
               <form className="space-y-6" onSubmit={handleSubmit}>
                 {/* Email Field */}
                 <div className="relative">

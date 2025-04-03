@@ -186,7 +186,7 @@ export default function Dashboard() {
               <p className="text-sm text-gray-500 mt-2">Available Balance</p>
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <p className="text-sm text-gray-600">Account Number: 850002238582</p>
-                <p className="text-sm text-gray-600">Statement Period: April 1, 2012 - February 25, 2025</p>
+                <p className="text-sm text-gray-600">Routing Number: 125109006</p>
               </div>
             </div>
 

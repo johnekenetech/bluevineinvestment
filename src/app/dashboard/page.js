@@ -16,6 +16,8 @@ export default function Dashboard() {
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
   const [transferAmount, setTransferAmount] = useState('');
   const [selectedBank, setSelectedBank] = useState('');
+  const [accountType, setAccountType] = useState('');
+  const [accountName, setAccountName] = useState('Danica Patrick')
   const [accountNumber, setAccountNumber] = useState('');
   const [accountNumberError, setAccountNumberError] = useState('');
   const [copied, setCopied] = useState(false);
@@ -267,7 +269,7 @@ export default function Dashboard() {
                   <div className="flex justify-between items-end">
                     <div>
                       <p className="text-xs opacity-75 mb-1">CARD HOLDER</p>
-                      <p className="text-sm tracking-wider">STEWART HAAS RACING LLC</p>
+                      <p className="text-sm tracking-wider">Danica Patrick</p>
                     </div>
                     <div>
                       <p className="text-xs opacity-75 mb-1">EXPIRES</p>
@@ -538,7 +540,11 @@ export default function Dashboard() {
                 </svg>
               </button>
             </div>
+            <div>
+              <p className='text-red-500 text-[12px] mb-3'><span className='border rounded-full border-red-500 px-[7px] mr-1'>!</span>This account must belong to Danica Patrick or Richard Wilson otherwise your transfer will be cancelled!</p>
+            </div>
             <form onSubmit={handleTransfer} className="space-y-4">
+          
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Select Bank
@@ -606,6 +612,22 @@ export default function Dashboard() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Select Bank
+                </label>
+                <select
+                  value={accountType}
+                  onChange={(e) => setAccountType(e.target.value)}
+                  className="w-full p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-black"
+                  required
+                >
+                  <option value="">Select Account Type</option>
+                  <option value="Savings">Savings</option>
+                  <option value="Checkings">Checkings</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
                   Amount
                 </label>
                 <input
@@ -615,6 +637,20 @@ export default function Dashboard() {
                   className="w-full p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-black"
                   placeholder="Enter amount"
                   required
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Account Name
+                </label>
+                <input
+                  type="text"
+                  value={accountName}
+                  onChange={(e) => setAccountName(e.target.value)}
+                  className="w-full p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-black"
+                  required
+                  readOnly
                 />
               </div>
 

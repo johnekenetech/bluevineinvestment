@@ -18,7 +18,7 @@ export default function Dashboard() {
   const [transferAmount, setTransferAmount] = useState('');
   const [selectedBank, setSelectedBank] = useState('');
   const [accountType, setAccountType] = useState('');
-  const [accountName, setAccountName] = useState('Danica Patrick')
+  const [accountName, setAccountName] = useState('')
   const [accountNumber, setAccountNumber] = useState('');
   const [accountNumberError, setAccountNumberError] = useState('');
   const [copied, setCopied] = useState(false);

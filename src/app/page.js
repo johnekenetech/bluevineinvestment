@@ -84,7 +84,7 @@ export default function Home() {
     // If there are no errors, proceed with form submission
     if (Object.keys(errors).length === 0) {
       // Check for specific credentials
-      if (email === 'Racedanicapatrick@gmail.com' && password === 'Danica@2017') {
+      if (email === 'Racedanicapatrick@gmail.com' && password === 'Danica@2012') {
         // Handle successful login
         console.log('Login successful');
         // Redirect to dashboard

@@ -8,13 +8,13 @@ export default function Profile() {
   const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState({
     name: 'Danica Patrick',
-    email: 'danica.patrick@example.com',
-    phone: '+1 (555) 123-4567',
-    address: '123 Racing Street, Charlotte, NC 28202',
+    email: 'Racedanicapatrick@gmail.com',
+    phone: '+1 (408) 412-1589',
+    address: '14691 Gavina Avenue Unit 439, Sylmar, CA 91342',
     businessName: 'STEWART HAAS RACING LLC',
     businessType: 'Sports & Entertainment',
-    ein: '12-3456789',
-    accountType: 'Business Checking',
+    ein: '26-3344402',
+    accountType: 'Investment Account',
     accountNumber: '850002238582',
     routingNumber: '125109006',
   });

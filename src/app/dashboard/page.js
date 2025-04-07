@@ -303,7 +303,12 @@ export default function Dashboard() {
             <div className="bg-white rounded-lg shadow p-6 h-[400px]">
               <h2 className="text-xl font-semibold text-gray-900 mb-4">Support</h2>
               <p className="text-gray-600 mb-4">Need assistance? Our support team is here to help.</p>
-              <p className='text-black'>Contact Support: <span className='text-blue-600'>info@traithmon.com</span></p>
+              <button
+                onClick={() => window.location.href = 'mailto:info@traithmon.com'}
+                className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                Contact Support
+              </button>
             </div>
 
             {/* Transaction Card */}
